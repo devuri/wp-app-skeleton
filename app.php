@@ -216,7 +216,7 @@ return [
      * The plugins directory is located outside the project directory and
      * allows for installation and management of plugins using Composer.
      */
-    'plugin_dir'       => 'plugins',
+    'plugin_dir'       => 'app/plugins',
 
     /*
      * Sets the directory for Must-Use (MU) plugins.
@@ -227,7 +227,7 @@ return [
      * By default, the framework includes the 'compose' MU plugin, which includes the 'web_app_config' hook.
      * This hook can be leveraged to configure the web application in most cases.
      */
-    'mu_plugin_dir'    => 'mu-plugins',
+    'mu_plugin_dir'    => 'app/mu-plugins',
 
     /*
      * SQLite Configuration

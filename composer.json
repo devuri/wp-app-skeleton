@@ -42,10 +42,10 @@
     "extra": {
         "wordpress-install-dir": "public/wp",
         "installer-paths": {
-            "public/mu-plugins/{$name}/": [
+            "public/app/mu-plugins/{$name}/": [
                 "type:wordpress-muplugin"
             ],
-            "public/plugins/{$name}/": [
+            "public/app/plugins/{$name}/": [
                 "type:wordpress-plugin"
             ],
             "public/app/themes/{$name}/": [
