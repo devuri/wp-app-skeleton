@@ -53,11 +53,6 @@
             ]
         }
     },
-    "scripts": {
-        "post-create-project-cmd": [
-            "@php nino setup example.com"
-        ]
-    },
     "config": {
         "allow-plugins": {
             "johnpbloch/wordpress-core-installer": true,
