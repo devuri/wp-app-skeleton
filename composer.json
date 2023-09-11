@@ -1,62 +1,67 @@
 {
-    "name": "devuri/wp-app-skeleton",
-    "type": "project",
-    "license": "MIT",
-    "description": "A base WordPress project to create web applications using environment variables.",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "devuri/wp-env-config": "dev-master",
-        "wpackagist-plugin/query-monitor": "*",
-        "wpackagist-plugin/email-log": "*",
-        "wpackagist-plugin/sucuri-scanner": "*",
-        "wpackagist-plugin/application-passwords-manager": "*",
-        "wpackagist-plugin/better-search-replace": "*",
-        "wpackagist-plugin/classic-editor": "*",
-        "wpackagist-plugin/custom-post-type-ui": "*",
-        "wpackagist-plugin/disable-comments": "*",
-        "wpackagist-plugin/disable-dashboard-widgets": "*",
-        "wpackagist-plugin/disable-emojis": "*",
-        "wpackagist-plugin/disable-gutenberg": "*",
-        "wpackagist-plugin/disable-json-api": "*",
-        "wpackagist-plugin/membership-lock": "*",
-        "wpackagist-plugin/snitch": "*",
-        "wpackagist-plugin/stream": "*",
-        "wpackagist-plugin/wordfence": "*",
-        "wpackagist-plugin/worker": "*",
-        "wpackagist-plugin/wp-auto-updates": "*",
-        "wpackagist-plugin/wp-mail-smtp": "*",
-        "wpackagist-theme/hello-elementor": "*",
-        "wpackagist-theme/twentytwentythree": "*"
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org",
-            "only": [
-                "wpackagist-plugin/*",
-                "wpackagist-theme/*"
-            ]
-        }
-    ],
-    "extra": {
-        "wordpress-install-dir": "public/wp",
-        "installer-paths": {
-            "public/app/mu-plugins/{$name}/": [
-                "type:wordpress-muplugin"
-            ],
-            "public/app/plugins/{$name}/": [
-                "type:wordpress-plugin"
-            ],
-            "public/app/themes/{$name}/": [
-                "type:wordpress-theme"
-            ]
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "johnpbloch/wordpress-core-installer": true,
-            "composer/installers": true
-        }
+  "name": "devuri/wp-app-skeleton",
+  "type": "project",
+  "license": "MIT",
+  "description": "A base WordPress project to create web applications using environment variables.",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "devuri/wp-env-config": "dev-master",
+    "wpackagist-plugin/query-monitor": "*",
+    "wpackagist-plugin/email-log": "*",
+    "wpackagist-plugin/sucuri-scanner": "*",
+    "wpackagist-plugin/application-passwords-manager": "*",
+    "wpackagist-plugin/better-search-replace": "*",
+    "wpackagist-plugin/classic-editor": "*",
+    "wpackagist-plugin/custom-post-type-ui": "*",
+    "wpackagist-plugin/disable-comments": "*",
+    "wpackagist-plugin/disable-dashboard-widgets": "*",
+    "wpackagist-plugin/disable-emojis": "*",
+    "wpackagist-plugin/disable-gutenberg": "*",
+    "wpackagist-plugin/disable-json-api": "*",
+    "wpackagist-plugin/membership-lock": "*",
+    "wpackagist-plugin/snitch": "*",
+    "wpackagist-plugin/stream": "*",
+    "wpackagist-plugin/wordfence": "*",
+    "wpackagist-plugin/worker": "*",
+    "wpackagist-plugin/wp-auto-updates": "*",
+    "wpackagist-plugin/wp-mail-smtp": "*",
+    "wpackagist-theme/hello-elementor": "*",
+    "wpackagist-theme/twentytwentythree": "*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
     }
+  ],
+  "extra": {
+    "wordpress-install-dir": "public/wp",
+    "installer-paths": {
+      "public/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "public/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "public/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "@php nino setup example.com"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "johnpbloch/wordpress-core-installer": true,
+      "composer/installers": true
+    }
+  }
 }
