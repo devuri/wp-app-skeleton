@@ -1,5 +1,5 @@
 {
-    "name": "devuri/wp-env-app",
+    "name": "devuri/wp-app-skeleton",
     "type": "project",
     "license": "MIT",
     "description": "A base WordPress project to create web applications using environment variables.",
