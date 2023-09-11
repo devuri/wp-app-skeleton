@@ -18,18 +18,10 @@ public/wp/*
 public/content/*
 public/app/*
 !public/app/templates/
+!public/app/mu-plugins/
+!public/app/mu-plugins/compose.php
 !public/app/.gitkeep
 !public/app/.htaccess
-
-public/plugins/*
-!public/plugins/.gitkeep
-!public/plugins/.htaccess
-!public/plugins/core
-
-public/mu-plugins/*
-!public/mu-plugins/.gitkeep
-!public/mu-plugins/.htaccess
-!public/mu-plugins/compose.php
 
 report/
 .wp-develop/
