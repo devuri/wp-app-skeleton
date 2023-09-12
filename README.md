@@ -47,7 +47,6 @@ Here's an overview of the directory structure used:
 ├── publickeys          # Public key used for encryption or verification purposes
 │   └── samplekey.pub   # Example key b75b666f-ac11-4342-b001-d2546f1d3a5b.pub
 ├── storage             # Storage directory for backups, cache, and logs
-│   ├── .backups        # Backup directory
 │   ├── cache           # Cache directory
 │   └── logs            # Logs directory
 │       └── wp-errors   # WordPress error logs
