@@ -44,7 +44,7 @@ Here's an overview of the directory structure used:
 │   ├── .htaccess       # Web server configuration file
 │   ├── index.php       # WordPress entry point
 │   └── wp-config.php   # WordPress configuration file
-├── publickeys          # Public key used for encryption or verification purposes
+├── pubkey              # Public key used for encryption or verification purposes
 │   └── samplekey.pub   # Example key b75b666f-ac11-4342-b001-d2546f1d3a5b.pub
 ├── storage             # Storage directory for backups, cache, and logs
 │   ├── cache           # Cache directory
